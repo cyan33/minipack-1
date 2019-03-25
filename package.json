@@ -4,6 +4,11 @@
   "description": "",
   "author": "Ronen Amiel",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src/minipack.js -d lib/",
+    "bundle": "node lib/src/minipack.js",
+    "flow": "flow"
+  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -15,8 +20,11 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "flow-bin": "^0.95.1",
     "prettier": "^1.10.2"
   }
 }
